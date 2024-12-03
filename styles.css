@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading div {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    padding: 0px 20px 0px 20px;
+}
+
+#popular {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-evenly;
+}
+
+.green {
+    color: green
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+}
+
+.option {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 10px;
+    transition: max-height 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+table{
+    margin-left: 30px;
+}
+
+.option:hover {
+    background-color: rgba(144, 238, 144, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.option .options {
+    display: none;
+    margin-top: 10px;
+}
+
+.option.expanded .options {
+    display: block;
+}
+
+
+.add-to-cart {
+    background-color: rgba(144, 238, 144, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: rgba(0, 128, 0, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.add-to-cart:active {
+    background-color: rgba(0, 100, 0, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
